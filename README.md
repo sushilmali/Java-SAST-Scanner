@@ -34,5 +34,18 @@ An automated, lightweight command-line security auditing engine engineered in \*
 
 \* Implement JSON/HTML log parsing reports optimized for automated DevSecOps CI/CD pipelines \[4.1].
 
+## 💻 How to Run the Scanner Local Labs
+
+To execute a local static security audit against any target source file, open your system terminal inside the root project directory and execute these core compilation and execution commands:
+
+### 1. Compile the Scanning Engine
+```bash
+javac --release 17 SecureCodeReviewer.java
+```
+
+### 2. Execute the Security Audit
+```bash
+java SecureCodeReviewer VulnerableApp.java
+```
 
 
