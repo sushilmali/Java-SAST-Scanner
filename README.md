@@ -1,2 +1,38 @@
-# Java-SAST-Scanner
-An automated command-line security tool built in Java to audit source code repositories for critical vulnerabilities.
+\# 🛡️ Java-Based Static Application Security Testing (SAST) Scanner
+
+
+
+\## 📌 Project Overview
+
+An automated, lightweight command-line security auditing engine engineered in \*\*Java\*\*. This tool scans application source code line-by-line using regular expression engines to discover systemic security vulnerabilities, hardcoded credentials, and high-risk injection flaws before code hits production \[3.1].
+
+
+
+\## ⚡ Core Capabilities
+
+\* \*\*Credential Leak Detection:\*\* Scans codebase strings for hardcoded passwords, database secrets, and private API keys.
+
+\* \*\*SQL Injection (SQLi) Identification:\*\* Flags unsafe string concatenations inside raw SQL strings to encourage developers to use secure `PreparedStatements` \[3.1].
+
+\* \*\*Command Injection Controls:\*\* Highlights risky system-level process execution functions like `Runtime.getRuntime().exec()`.
+
+
+
+\## 🛠️ Tech Stack \& Architecture
+
+\* \*\*Language:\*\* Java (JDK 17+)
+
+\* \*\*Engine:\*\* Java Regex Parsing Engine (`java.util.regex`)
+
+\* \*\*Environment:\*\* Command-Line Interface (CLI)
+
+
+
+\## 🚀 Future Roadmap
+
+\* Scale analysis rules to map directly against the complete \*\*OWASP Top 10\*\* vulnerabilities \[3.1].
+
+\* Implement JSON/HTML log parsing reports optimized for automated DevSecOps CI/CD pipelines \[4.1].
+
+
+
