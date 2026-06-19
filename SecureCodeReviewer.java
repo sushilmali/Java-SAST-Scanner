@@ -5,7 +5,7 @@ import java.util.regex.Pattern;
 
 public class SecureCodeReviewer {
 
-    private static final Pattern HARDCODED_SECRET = Pattern.compile("(?i)(password|secret|api_key|token)\\s*=\\s*\"[^\"]+\"");
+    private static final Pattern HARDCODED_SECRET = Pattern.compile("(?i)(password|secret|api_key|token)\\s*=\\s*\"[^\"]+\"|.*String\\s+\\w*(password|secret|api|key|token)\\w*\\s*=\\s*\"[^\"]+\"");
     private static final Pattern SQL_INJECTION = Pattern.compile("(?i).*SELECT.*FROM.*\\+.*");
     private static final Pattern UNSAFE_EXECUTION = Pattern.compile("Runtime\\.getRuntime\\(\\)\\.exec\\(");
 
